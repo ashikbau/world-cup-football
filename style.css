@@ -1,0 +1,137 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    }
+/* .container style */
+.container-head{
+    display: flex;
+    background-color: black;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+}
+.head-texts{
+    display: flex;
+}
+.head-text{
+    color: white;
+    padding-left: 30px;
+    font-size: 30px;
+}
+.banner-image{
+    padding-right: 10px;
+    }
+/* watch button style  */
+.watch-button{
+    border: 2px solid red;
+    background-color:tomato;
+    text-decoration: none;
+    width: 56px;
+    height: 25px;
+    border-radius: 10px;
+    color: white;
+    
+}
+.manu{
+   
+    padding: 10px;
+    margin: 30px;
+    width: 250px;
+}
+.manu-bar a{
+    display: inline-flex;
+    border: 2px solid gray;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+
+}
+#blog-id{
+    background-color: red;
+    border-radius: 10px;
+}
+
+/* matches style */
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+    
+}
+  
+.match .match-banner img{
+    width: 312px;
+height: 175px;
+}
+.match-info{
+    display: flex;
+    align-items: center;
+    
+    }
+.chat-icon{
+    margin-right: 10px;
+    padding-right: 10px;
+
+}
+/* footer- style */
+  .footer-container{
+    background-color: black;
+    height: 300px;
+    text-align: center; 
+}
+.footer-head{
+    text-align: center;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-top: 30px;
+}
+.footer-paragraph{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.fa-facebook{
+    color: white;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-linkedin {
+    color: white;
+}
+.media-icon{
+    text-decoration: none;
+}
+/* Media Quaries */
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .match{
+        flex-direction: column;
+    }
+    .head-texts, banner-image, .matches{
+        grid-template-columns: repeat(1,1fr);
+    }
+    }
+    /* Tablet device */
+    @media only screen and (min-width:688px) and (max-width:){
+        .matches, .banner-image{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .match, .container-head{
+            flex-direction: column;
+        }
+        .container-head{ width: 100px;}
+    }
+
+
+    
+    
+
+    
